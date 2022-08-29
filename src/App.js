@@ -55,6 +55,7 @@ function App() {
       players[randomPlayer(Number(numberOfPlayers))].push(card);
     });
 
+    document.querySelector("#result").style.opacity = 1;
     document.querySelector("#result").innerText = players.join("\r");
   };
 
@@ -78,7 +79,6 @@ function App() {
         <Button id="play-btn" className="btn-lg btn-primary my-5" onClick={distributeCard}>
           DISTRIBUTE CARD
         </Button>
-        <h3>Result below</h3>
         <pre id="result" className="w-100 text-start px-4 bg-success"></pre>
       </header>
     </div>
