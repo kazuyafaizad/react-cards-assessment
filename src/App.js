@@ -55,7 +55,6 @@ function App() {
       players[randomPlayer(Number(numberOfPlayers))].push(card);
     });
 
-    document.querySelector("#result").style.opacity = 1;
     document.querySelector("#result").innerText = players.join("\r");
   };
 
