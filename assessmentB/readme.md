@@ -1,3 +1,5 @@
+# SQL improvement attempt by Mohd  Norfaizad
+
 The query looks good but I think the query should have index in order to improve it.
 ```
 CREATE INDEX affiliates_type ON affiliates (type);
